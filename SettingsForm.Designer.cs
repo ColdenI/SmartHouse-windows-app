@@ -51,7 +51,7 @@ namespace Smart_House
             this.buttonReset.Image = global::Smart_House.Properties.Resources.undo;
             this.buttonReset.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonReset.Location = new System.Drawing.Point(16, 171);
-            this.buttonReset.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.buttonReset.Margin = new System.Windows.Forms.Padding(4);
             this.buttonReset.Name = "buttonReset";
             this.buttonReset.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.buttonReset.Size = new System.Drawing.Size(323, 44);
@@ -68,9 +68,9 @@ namespace Smart_House
             this.groupBox1.Controls.Add(this.numericUpDown1);
             this.groupBox1.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.groupBox1.Location = new System.Drawing.Point(16, 15);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox1.Size = new System.Drawing.Size(309, 80);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
@@ -87,7 +87,7 @@ namespace Smart_House
             0,
             0});
             this.numericUpDown1.Location = new System.Drawing.Point(29, 31);
-            this.numericUpDown1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.numericUpDown1.Margin = new System.Windows.Forms.Padding(4);
             this.numericUpDown1.Maximum = new decimal(new int[] {
             300000,
             0,
@@ -117,7 +117,7 @@ namespace Smart_House
             this.checkBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.checkBox1.Font = new System.Drawing.Font("Comic Sans MS", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.checkBox1.Location = new System.Drawing.Point(16, 113);
-            this.checkBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.checkBox1.Margin = new System.Windows.Forms.Padding(4);
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Size = new System.Drawing.Size(367, 29);
             this.checkBox1.TabIndex = 2;
@@ -131,12 +131,14 @@ namespace Smart_House
             // 
             this.checkBox_isMakeFile.AutoSize = true;
             this.checkBox_isMakeFile.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.checkBox_isMakeFile.Enabled = false;
             this.checkBox_isMakeFile.Font = new System.Drawing.Font("Comic Sans MS", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.checkBox_isMakeFile.Location = new System.Drawing.Point(16, 232);
             this.checkBox_isMakeFile.Name = "checkBox_isMakeFile";
             this.checkBox_isMakeFile.Size = new System.Drawing.Size(355, 29);
             this.checkBox_isMakeFile.TabIndex = 3;
             this.checkBox_isMakeFile.Text = "Выполнять команды внешних файлов";
+            this.toolTip1.SetToolTip(this.checkBox_isMakeFile, "Выполнять команды из внешнего файла сторонних программ.");
             this.checkBox_isMakeFile.UseVisualStyleBackColor = false;
             this.checkBox_isMakeFile.CheckedChanged += new System.EventHandler(this.checkBox_isMakeFile_CheckedChanged);
             // 
@@ -151,7 +153,7 @@ namespace Smart_House
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.buttonReset);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "SettingsForm";
             this.Text = "Настройки - Smart House";
             this.Load += new System.EventHandler(this.SettingsForm_Load);
