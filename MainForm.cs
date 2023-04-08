@@ -104,6 +104,7 @@ namespace Smart_House
                 if (message == DialogResult.Yes)
                 {
                     ResetModuleData();
+                    Application.Restart();
                 }
                 else
                 {
