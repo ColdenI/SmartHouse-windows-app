@@ -67,6 +67,7 @@ namespace Smart_House
                 {
                     string url_ = "http://" + module.IP + url;
                     wb.DownloadString(url_);
+                    new ViewURLForm(url_).ShowDialog();
                 }
             }
             catch (System.Net.WebException)

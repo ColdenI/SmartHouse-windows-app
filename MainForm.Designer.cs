@@ -66,11 +66,12 @@ namespace Smart_House
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 2.921348F));
             this.tableLayoutPanel1.Controls.Add(this.panel1, 0, 0);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 25);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 31);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 1;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(461, 486);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(615, 598);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // panel1
@@ -79,9 +80,10 @@ namespace Smart_House
             this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(3, 3);
+            this.panel1.Location = new System.Drawing.Point(4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(441, 480);
+            this.panel1.Size = new System.Drawing.Size(589, 590);
             this.panel1.TabIndex = 1;
             // 
             // moduleList
@@ -90,11 +92,12 @@ namespace Smart_House
             this.moduleList.Dock = System.Windows.Forms.DockStyle.Fill;
             this.moduleList.Font = new System.Drawing.Font("Sitka Heading", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.moduleList.FormattingEnabled = true;
-            this.moduleList.ItemHeight = 30;
-            this.moduleList.Location = new System.Drawing.Point(0, 29);
+            this.moduleList.ItemHeight = 38;
+            this.moduleList.Location = new System.Drawing.Point(0, 36);
+            this.moduleList.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.moduleList.Name = "moduleList";
             this.moduleList.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.moduleList.Size = new System.Drawing.Size(441, 419);
+            this.moduleList.Size = new System.Drawing.Size(589, 515);
             this.moduleList.TabIndex = 0;
             this.moduleList.SelectedIndexChanged += new System.EventHandler(this.moduleList_SelectedIndexChanged);
             // 
@@ -105,9 +108,10 @@ namespace Smart_House
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button1.ForeColor = System.Drawing.Color.Blue;
-            this.button1.Location = new System.Drawing.Point(0, 448);
+            this.button1.Location = new System.Drawing.Point(0, 551);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(441, 32);
+            this.button1.Size = new System.Drawing.Size(589, 39);
             this.button1.TabIndex = 2;
             this.button1.Text = "Открыть";
             this.button1.UseVisualStyleBackColor = false;
@@ -118,8 +122,9 @@ namespace Smart_House
             this.panel2.Controls.Add(this.label1);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(441, 29);
+            this.panel2.Size = new System.Drawing.Size(589, 36);
             this.panel2.TabIndex = 1;
             // 
             // label1
@@ -129,8 +134,9 @@ namespace Smart_House
             this.label1.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label1.ForeColor = System.Drawing.Color.DarkMagenta;
             this.label1.Location = new System.Drawing.Point(0, 0);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(441, 29);
+            this.label1.Size = new System.Drawing.Size(589, 36);
             this.label1.TabIndex = 0;
             this.label1.Text = "Ваши модули";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -138,6 +144,7 @@ namespace Smart_House
             // toolStrip1
             // 
             this.toolStrip1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.toolStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripButton3,
             this.toolStripDropDownButton1,
@@ -145,7 +152,7 @@ namespace Smart_House
             this.toolStripButton2});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(461, 25);
+            this.toolStrip1.Size = new System.Drawing.Size(615, 31);
             this.toolStrip1.TabIndex = 1;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -156,7 +163,7 @@ namespace Smart_House
             this.toolStripButton3.Image = global::Smart_House.Properties.Resources.new1;
             this.toolStripButton3.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton3.Name = "toolStripButton3";
-            this.toolStripButton3.Size = new System.Drawing.Size(90, 22);
+            this.toolStripButton3.Size = new System.Drawing.Size(108, 28);
             this.toolStripButton3.Text = "Добавить";
             this.toolStripButton3.Click += new System.EventHandler(this.toolStripButton3_Click);
             // 
@@ -172,7 +179,7 @@ namespace Smart_House
             this.toolStripDropDownButton1.Image = global::Smart_House.Properties.Resources.edit;
             this.toolStripDropDownButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripDropDownButton1.Name = "toolStripDropDownButton1";
-            this.toolStripDropDownButton1.Size = new System.Drawing.Size(136, 22);
+            this.toolStripDropDownButton1.Size = new System.Drawing.Size(161, 28);
             this.toolStripDropDownButton1.Text = "Редактировать";
             // 
             // добавитьМодульToolStripMenuItem
@@ -181,7 +188,7 @@ namespace Smart_House
             this.добавитьМодульToolStripMenuItem.ForeColor = System.Drawing.Color.Teal;
             this.добавитьМодульToolStripMenuItem.Image = global::Smart_House.Properties.Resources.new1;
             this.добавитьМодульToolStripMenuItem.Name = "добавитьМодульToolStripMenuItem";
-            this.добавитьМодульToolStripMenuItem.Size = new System.Drawing.Size(224, 22);
+            this.добавитьМодульToolStripMenuItem.Size = new System.Drawing.Size(274, 26);
             this.добавитьМодульToolStripMenuItem.Text = "Добавить модуль";
             this.добавитьМодульToolStripMenuItem.Click += new System.EventHandler(this.toolStripButton3_Click);
             // 
@@ -190,7 +197,7 @@ namespace Smart_House
             this.удалитьМодульToolStripMenuItem.ForeColor = System.Drawing.Color.IndianRed;
             this.удалитьМодульToolStripMenuItem.Image = global::Smart_House.Properties.Resources.del;
             this.удалитьМодульToolStripMenuItem.Name = "удалитьМодульToolStripMenuItem";
-            this.удалитьМодульToolStripMenuItem.Size = new System.Drawing.Size(224, 22);
+            this.удалитьМодульToolStripMenuItem.Size = new System.Drawing.Size(274, 26);
             this.удалитьМодульToolStripMenuItem.Text = "Удалить модуль";
             this.удалитьМодульToolStripMenuItem.Click += new System.EventHandler(this.удалитьМодульToolStripMenuItem_Click);
             // 
@@ -202,7 +209,7 @@ namespace Smart_House
             this.изменитьМодульToolStripMenuItem.ForeColor = System.Drawing.Color.RoyalBlue;
             this.изменитьМодульToolStripMenuItem.Image = global::Smart_House.Properties.Resources.edit;
             this.изменитьМодульToolStripMenuItem.Name = "изменитьМодульToolStripMenuItem";
-            this.изменитьМодульToolStripMenuItem.Size = new System.Drawing.Size(224, 22);
+            this.изменитьМодульToolStripMenuItem.Size = new System.Drawing.Size(274, 26);
             this.изменитьМодульToolStripMenuItem.Text = "Изменить модуль";
             // 
             // изменитьИмяToolStripMenuItem
@@ -214,7 +221,7 @@ namespace Smart_House
             this.изменитьИмяToolStripMenuItem.ForeColor = System.Drawing.Color.RoyalBlue;
             this.изменитьИмяToolStripMenuItem.Image = global::Smart_House.Properties.Resources.edit;
             this.изменитьИмяToolStripMenuItem.Name = "изменитьИмяToolStripMenuItem";
-            this.изменитьИмяToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.изменитьИмяToolStripMenuItem.Size = new System.Drawing.Size(201, 26);
             this.изменитьИмяToolStripMenuItem.Text = "Изменить имя";
             // 
             // toolStripTextBox3
@@ -222,21 +229,21 @@ namespace Smart_House
             this.toolStripTextBox3.BackColor = System.Drawing.SystemColors.MenuBar;
             this.toolStripTextBox3.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.toolStripTextBox3.Name = "toolStripTextBox3";
-            this.toolStripTextBox3.Size = new System.Drawing.Size(200, 23);
+            this.toolStripTextBox3.Size = new System.Drawing.Size(200, 27);
             this.toolStripTextBox3.Text = "Введите новое имя модуля";
             this.toolStripTextBox3.Click += new System.EventHandler(this.toolStripTextBox3_Click);
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(257, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(271, 6);
             // 
             // изменитьToolStripMenuItem2
             // 
             this.изменитьToolStripMenuItem2.ForeColor = System.Drawing.Color.RoyalBlue;
             this.изменитьToolStripMenuItem2.Image = global::Smart_House.Properties.Resources.edit;
             this.изменитьToolStripMenuItem2.Name = "изменитьToolStripMenuItem2";
-            this.изменитьToolStripMenuItem2.Size = new System.Drawing.Size(260, 22);
+            this.изменитьToolStripMenuItem2.Size = new System.Drawing.Size(274, 26);
             this.изменитьToolStripMenuItem2.Text = "Изменить";
             this.изменитьToolStripMenuItem2.Click += new System.EventHandler(this.изменитьToolStripMenuItem2_Click);
             // 
@@ -248,7 +255,7 @@ namespace Smart_House
             this.изменитьIPToolStripMenuItem.ForeColor = System.Drawing.Color.RoyalBlue;
             this.изменитьIPToolStripMenuItem.Image = global::Smart_House.Properties.Resources.edit;
             this.изменитьIPToolStripMenuItem.Name = "изменитьIPToolStripMenuItem";
-            this.изменитьIPToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.изменитьIPToolStripMenuItem.Size = new System.Drawing.Size(201, 26);
             this.изменитьIPToolStripMenuItem.Text = "Изменить IP";
             // 
             // toolStripTextBox1
@@ -256,7 +263,7 @@ namespace Smart_House
             this.toolStripTextBox1.BackColor = System.Drawing.SystemColors.Control;
             this.toolStripTextBox1.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.toolStripTextBox1.Name = "toolStripTextBox1";
-            this.toolStripTextBox1.Size = new System.Drawing.Size(100, 23);
+            this.toolStripTextBox1.Size = new System.Drawing.Size(100, 27);
             this.toolStripTextBox1.Text = "Введите новое IP модуля";
             this.toolStripTextBox1.Click += new System.EventHandler(this.toolStripTextBox1_Click);
             // 
@@ -265,7 +272,7 @@ namespace Smart_House
             this.изменитьToolStripMenuItem.ForeColor = System.Drawing.Color.RoyalBlue;
             this.изменитьToolStripMenuItem.Image = global::Smart_House.Properties.Resources.edit;
             this.изменитьToolStripMenuItem.Name = "изменитьToolStripMenuItem";
-            this.изменитьToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.изменитьToolStripMenuItem.Size = new System.Drawing.Size(174, 26);
             this.изменитьToolStripMenuItem.Text = "Изменить";
             this.изменитьToolStripMenuItem.Click += new System.EventHandler(this.изменитьToolStripMenuItem_Click);
             // 
@@ -274,7 +281,7 @@ namespace Smart_House
             this.информацияОМодулеToolStripMenuItem.ForeColor = System.Drawing.Color.DeepSkyBlue;
             this.информацияОМодулеToolStripMenuItem.Image = global::Smart_House.Properties.Resources.info;
             this.информацияОМодулеToolStripMenuItem.Name = "информацияОМодулеToolStripMenuItem";
-            this.информацияОМодулеToolStripMenuItem.Size = new System.Drawing.Size(224, 22);
+            this.информацияОМодулеToolStripMenuItem.Size = new System.Drawing.Size(274, 26);
             this.информацияОМодулеToolStripMenuItem.Text = "Информация о модуле";
             this.информацияОМодулеToolStripMenuItem.Click += new System.EventHandler(this.информацияОМодулеToolStripMenuItem_Click);
             // 
@@ -285,7 +292,7 @@ namespace Smart_House
             this.toolStripButton1.Image = global::Smart_House.Properties.Resources.settings;
             this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton1.Name = "toolStripButton1";
-            this.toolStripButton1.Size = new System.Drawing.Size(95, 22);
+            this.toolStripButton1.Size = new System.Drawing.Size(116, 28);
             this.toolStripButton1.Text = "Настройки";
             this.toolStripButton1.Click += new System.EventHandler(this.toolStripButton1_Click);
             // 
@@ -296,20 +303,21 @@ namespace Smart_House
             this.toolStripButton2.Image = global::Smart_House.Properties.Resources.info;
             this.toolStripButton2.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton2.Name = "toolStripButton2";
-            this.toolStripButton2.Size = new System.Drawing.Size(113, 22);
+            this.toolStripButton2.Size = new System.Drawing.Size(137, 28);
             this.toolStripButton2.Text = "О Программе";
             this.toolStripButton2.Click += new System.EventHandler(this.toolStripButton2_Click);
             // 
             // MainForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Smart_House.Properties.Resources.sh_fon_2;
-            this.ClientSize = new System.Drawing.Size(461, 511);
+            this.ClientSize = new System.Drawing.Size(615, 629);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.toolStrip1);
             this.DoubleBuffered = true;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "MainForm";
             this.Text = "Smart House";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MainForm_FormClosing);

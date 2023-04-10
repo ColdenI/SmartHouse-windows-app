@@ -131,14 +131,14 @@ namespace Smart_House
             // 
             this.checkBox_isMakeFile.AutoSize = true;
             this.checkBox_isMakeFile.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.checkBox_isMakeFile.Enabled = false;
             this.checkBox_isMakeFile.Font = new System.Drawing.Font("Comic Sans MS", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.checkBox_isMakeFile.Location = new System.Drawing.Point(16, 232);
             this.checkBox_isMakeFile.Name = "checkBox_isMakeFile";
-            this.checkBox_isMakeFile.Size = new System.Drawing.Size(355, 29);
+            this.checkBox_isMakeFile.Size = new System.Drawing.Size(361, 29);
             this.checkBox_isMakeFile.TabIndex = 3;
-            this.checkBox_isMakeFile.Text = "Выполнять команды внешних файлов";
-            this.toolTip1.SetToolTip(this.checkBox_isMakeFile, "Выполнять команды из внешнего файла сторонних программ.");
+            this.checkBox_isMakeFile.Text = "Отображать запрос после выполнения";
+            this.toolTip1.SetToolTip(this.checkBox_isMakeFile, "Будет появляться адрес запроса последнего действия. Для взаимодействия со сторонн" +
+        "ими программами (Пример: Aison – от Colden I)  ");
             this.checkBox_isMakeFile.UseVisualStyleBackColor = false;
             this.checkBox_isMakeFile.CheckedChanged += new System.EventHandler(this.checkBox_isMakeFile_CheckedChanged);
             // 

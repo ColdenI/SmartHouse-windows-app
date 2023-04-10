@@ -52,7 +52,7 @@ namespace Smart_House
             // 
             this.comboBox2.Location = new System.Drawing.Point(0, 0);
             this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(121, 21);
+            this.comboBox2.Size = new System.Drawing.Size(121, 24);
             this.comboBox2.TabIndex = 0;
             // 
             // label5
@@ -75,8 +75,9 @@ namespace Smart_House
             this.label1.Font = new System.Drawing.Font("Ravie", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.label1.Location = new System.Drawing.Point(-1, 0);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(311, 63);
+            this.label1.Size = new System.Drawing.Size(415, 78);
             this.label1.TabIndex = 0;
             this.label1.Text = "22.00 °C";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -86,27 +87,29 @@ namespace Smart_House
             this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.label2.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label2.ForeColor = System.Drawing.Color.Navy;
-            this.label2.Location = new System.Drawing.Point(1, 63);
+            this.label2.Location = new System.Drawing.Point(1, 78);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(309, 42);
+            this.label2.Size = new System.Drawing.Size(412, 52);
             this.label2.TabIndex = 1;
             this.label2.Text = "Влажность: 55 %";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // MTempMForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Smart_House.Properties.Resources.sh_fon_2;
-            this.ClientSize = new System.Drawing.Size(309, 112);
+            this.ClientSize = new System.Drawing.Size(409, 128);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MaximizeBox = false;
-            this.MaximumSize = new System.Drawing.Size(325, 151);
-            this.MinimumSize = new System.Drawing.Size(325, 151);
+            this.MaximumSize = new System.Drawing.Size(427, 175);
+            this.MinimumSize = new System.Drawing.Size(427, 175);
             this.Name = "MTempMForm";
             this.Text = " () - Smart House";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MLempForm_FormClosing);
