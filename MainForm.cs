@@ -198,6 +198,11 @@ namespace Smart_House
         {
             Height = Properties.Settings.Default.Height;
             Width = Properties.Settings.Default.Width;
+            if (Properties.Settings.Default.startPosition != new Point(-1000, -1000))
+            {
+                Location = Properties.Settings.Default.startPosition;
+            }
+
             //CheckVersionApp();
             LoadAndRangeModuleData();
             ModuleList_Update();
@@ -208,6 +213,7 @@ namespace Smart_House
         {
             Properties.Settings.Default.Width = Width;
             Properties.Settings.Default.Height = Height;
+            Properties.Settings.Default.startPosition = Location;
             Properties.Settings.Default.Save();
             SavaModuleData();
             
@@ -332,6 +338,7 @@ namespace Smart_House
                 
             }
 
+            moduleList.SelectedIndex = -1;
             this.Enabled = true;
             this.Text = "Smart House";
         }
@@ -431,6 +438,15 @@ namespace Smart_House
         private void toolStripTextBox1_Click(object sender, EventArgs e)
         {
             toolStripTextBox1.Text = "";
+        }
+
+        private void MainForm_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter && moduleList.SelectedIndex >= 0)
+            {
+                DoubleModuleListSelect = -1;
+                openWorkModule();
+            }    
         }
     }
 }

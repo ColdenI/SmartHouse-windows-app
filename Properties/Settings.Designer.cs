@@ -106,5 +106,17 @@ namespace Smart_House.Properties {
                 this["isMakeFile"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("-1000, -1000")]
+        public global::System.Drawing.Point startPosition {
+            get {
+                return ((global::System.Drawing.Point)(this["startPosition"]));
+            }
+            set {
+                this["startPosition"] = value;
+            }
+        }
     }
 }
