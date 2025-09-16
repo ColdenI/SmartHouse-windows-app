@@ -34,3 +34,20 @@
 - Просмотр статуса системы
 
 ### 📁 Структура проекта:
+SmartHouse/
+├── MainForm.cs # Основное окно
+├── MTempForm.cs # Форма температуры
+├── MSocketForm.cs # Форма розетки
+├── AddModuleForm.cs # Добавление модуля
+├── SettingsForm.cs # Настройки
+├── App.config # Конфигурация
+└── Smart House.exe # Скомпилированное приложение
+
+
+---
+
+## 🔧 Как запустить?
+
+1. Клонируйте репозиторий:
+   ```bash
+   git clone https://github.com/ColdenI/SmartHouse.git
